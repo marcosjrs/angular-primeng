@@ -14,6 +14,7 @@ angular.json
 "styles": [
     "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
     "node_modules/primeng/resources/primeng.min.css",
+    "node_modules/primeicons/primeicons.css"
     ...
 ]
 ```
@@ -46,6 +47,12 @@ Probamos en el html de un componente:
 </div>
 ```
 
+Creamos las páginas
+```
+ng g m pages --routing
+ng g c pages/home
+....
+```
 
 
 ## Development server
