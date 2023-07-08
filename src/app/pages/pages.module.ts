@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsComponent } from './skills/skills.component';
+import { CardModule } from 'primeng/card';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    CardModule
   ]
 })
 export class PagesModule { }
