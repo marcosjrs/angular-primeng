@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
-import { MenubarModule } from 'primeng/menubar';
+import { PrimengModule } from '../primeng/primeng.module';
 
 const COMPONENTS = [
   MenuComponent
@@ -10,6 +10,6 @@ const COMPONENTS = [
 @NgModule({
   declarations: COMPONENTS,
   exports: COMPONENTS,
-  imports: [ CommonModule, MenubarModule ]
+  imports: [ CommonModule, PrimengModule ]
 })
 export class SharedModule { }
