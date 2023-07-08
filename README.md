@@ -1,6 +1,47 @@
 # AngularPrimeng
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+```
+pnpm add primeng primeicons
+```
+
+angular.json
+```
+"styles": [
+    "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+    "node_modules/primeng/resources/primeng.min.css",
+    ...
+]
+```
+
+
+app.module.ts
+```
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+...
+
+ imports: [
+    BrowserAnimationsModule,
+    ButtonModule,
+    ....
+```
+
+
+styles.css
+```
+body {
+  font-family: var(--font-family);
+}
+```
+
+Probamos en el html de un componente:
+```
+<div class="card flex justify-content-center">
+  <p-button label="Submit"></p-button>
+</div>
+```
+
+
 
 ## Development server
 
