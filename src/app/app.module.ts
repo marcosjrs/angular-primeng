@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    SharedModule,
     ButtonModule,
     CalendarModule,
     FormsModule
