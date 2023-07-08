@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    CalendarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
