@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
 import { CardModule } from 'primeng/card';
+import { AccordionModule } from 'primeng/accordion';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -9,11 +11,15 @@ import { CardModule } from 'primeng/card';
   imports: [
     CommonModule,
     MenubarModule,
-    CardModule
+    CardModule,
+    AccordionModule,
+    ButtonModule
   ],
   exports:[
     MenubarModule,
-    CardModule
+    CardModule,
+    AccordionModule,
+    ButtonModule
   ]
 })
 export class PrimengModule { }
