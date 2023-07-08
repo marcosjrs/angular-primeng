@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PrimengModule } from '../primeng/primeng.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PrimengModule } from '../primeng/primeng.module';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    PrimengModule
+    PrimengModule,
+    FormsModule
   ]
 })
 export class PagesModule { }

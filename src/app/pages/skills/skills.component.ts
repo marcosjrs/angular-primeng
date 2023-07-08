@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   activeIndex: number | undefined;
+  value: number = 60;
 }
