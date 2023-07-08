@@ -1,6 +1,11 @@
 # AngularPrimeng
 
 ```
+Documentación oficial:
+https://primeng.org/installation
+```
+
+```
 pnpm add primeng primeicons
 ```
 
