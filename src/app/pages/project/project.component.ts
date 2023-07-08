@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GithubService } from 'src/app/services/github.service';
 
 @Component({
   selector: 'app-project',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProjectComponent {
 
+  repos$ = this.gitSVC.getAllRepositories();
+
+  constructor(private gitSVC:GithubService){
+
+  }
 }

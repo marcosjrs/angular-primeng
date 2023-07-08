@@ -1,26 +1,13 @@
-<div class="grid">
-  <div class="col-12 md:col-6 lg:col-4">
-    <p-card header="Title">
-      <p class="m-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-          quas!
-      </p>
-  </p-card>
-  </div>
-  <div class="col-12 md:col-6 lg:col-4">
-    <p-card header="Title">
-      <p class="m-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-          quas!
-      </p>
-  </p-card>
-  </div>
-  <div class="col-12 md:col-6 lg:col-4">
-    <p-card header="Title">
-      <p class="m-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-          quas!
-      </p>
-  </p-card>
+<div class="m-4">
+  <div class="grid" *ngIf="repos$ | async as repos">
+      <p-card *ngFor="let repo of repos" class="col-12 md:col-6 lg:col-4 xl:col-3" 
+      [header]="repo.name" [subheader]="repo.full_name">
+      <a [href]="repo.html_url" target="_blank" rel="noopener noreferrer">
+        Última actualización: {{ repo.updated_at | date:'dd/MM/yyyy' }}
+      </a>
+        <p class="m-0" *ngIf="repo.description">
+          {{repo.description}}
+        </p>
+      </p-card>
   </div>
 </div>
